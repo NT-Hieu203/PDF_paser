@@ -28,6 +28,11 @@ conda create -n flask_env python=3.12
 #kích hoạt môi trường ảo
 conda activate flask_env
 ```
+
+### Cài các Dependencies:
+```bash
+pip install -r requirements.txt
+```
 ### Tải các model cần thiết:
 #### DocLayout-YOLO:
 - Tải file doclayout_yolo_docstructbench_imgsz1024.pt thủ công từ [juliozhao/DocLayout-YOLO-DocStructBench](https://huggingface.co/juliozhao/DocLayout-YOLO-DocStructBench)
@@ -37,10 +42,7 @@ filepath = hf_hub_download(repo_id="juliozhao/DocLayout-YOLO-DocStructBench", fi
 ```
 #### Model LayoutLM-v3:
 - Tải best model ở output Notebook Kaggle: [Best Model](https://www.kaggle.com/code/nguyenthanhhieu1006/trainlayoutlm)
-### Cài các Dependencies:
-```bash
-pip install -r requirements.txt
-```
+
 ### Chuyển vào thư mục Back_end và chạy dự án:
 ```bash
 cd Back_end
